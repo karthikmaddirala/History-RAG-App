@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"><title>History RAG</title>
+<style>
+  body { font: 14px system-ui; margin: 0; padding: 12px; }
+  .tabs { display: flex; gap: 4px; margin-bottom: 12px; }
+  .tabs button { flex: 1; padding: 8px; border: 1px solid #ccc; background: #f5f5f5; cursor: pointer; }
+  .tabs button.active { background: #2563eb; color: #fff; border-color: #2563eb; }
+  .pane { display: none; }
+  .pane.active { display: block; }
+  #chat-input { width: 100%; padding: 8px; box-sizing: border-box; }
+  .hit { padding: 8px; border-bottom: 1px solid #eee; }
+  .hit a { color: #2563eb; text-decoration: none; }
+  .hit .meta { font-size: 11px; color: #888; }
+  #search-note { color: #666; font-size: 13px; }
+</style></head>
+<body>
+  <div class="tabs">
+    <button id="tab-chat" class="active">Chat</button>
+    <button id="tab-search">Search</button>
+  </div>
+  <div id="pane-chat" class="pane active">
+    <input id="chat-input" placeholder="Ask about your browsing..." />
+    <div id="results"></div>
+  </div>
+  <div id="pane-search" class="pane">
+    <p id="search-note">Search mode — just use Chrome's address bar or google.com as normal. This extension stays out of the way.</p>
+  </div>
+  <script src="sidepanel.js"></script>
+</body></html>

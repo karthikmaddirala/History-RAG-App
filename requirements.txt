@@ -1,0 +1,6 @@
+fastapi>=0.110
+uvicorn[standard]>=0.27
+pydantic>=2.6
+chromadb>=0.4.24
+sentence-transformers>=2.5
+rank-bm25>=0.2.2
