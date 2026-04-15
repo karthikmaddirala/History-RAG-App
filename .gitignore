@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+chroma_data/
+chroma_dev/
+chroma_test/
+chroma_prod/
+.env
+.env.local
+*.egg-info/
+dist/
+build/
+mlruns/
+mlflow.db
+.DS_Store
+node_modules/
